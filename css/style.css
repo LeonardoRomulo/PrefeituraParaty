@@ -1,0 +1,184 @@
+/* reset css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+/* Estilos globais */
+.limitar-secao {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+h3 {
+    font-size: 32px;
+    text-align: center;
+    margin: 0 0 40px 0;
+}
+
+p {
+    line-height: 32px;
+    margin-top: 20px;
+}
+
+/*  topo css */
+
+.topo {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.container {
+    padding: 20px 0;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.container img:hover {
+    width: 155px;
+}
+nav {
+    font-size: 18px;
+}
+
+nav a {
+    margin: 0 5px;
+    color: #1d1d1d;
+}
+nav a:hover {
+    font-size: 20px;
+    background-color: #73B2D9;
+    padding: 5px;
+    border-radius: 7px;
+    color: #fff;
+}
+
+/* BANNER */
+section {
+    padding: 60px 20px;
+}
+
+.secao-capa {
+    margin: 111px auto;
+    background-image: url("../assets/bg-estacao.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.secao-capa::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+}
+
+.banner img {
+    width: 100%;
+}
+
+.secao-capa div {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    z-index: 1;
+    padding: 60px 20px;
+}
+
+.secao-capa h1 {
+    font-size: 80px;
+}
+
+.secao-capa h2 {
+    font-size: 35px;
+}
+
+.secao-capa h1, .secao-capa h2 {
+    margin: 0;
+    color: #ffffff;
+    text-shadow: 1px 1px 5px #000000;
+}
+
+/* Sobre */
+
+.secao-destaque img:first-of-type {
+    width: 100%;
+}
+
+.secao-destaque p:first-letter {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.secao-pontos-turisticos {
+    background-color: #e9e9e9;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    margin: 12px 25px 0 0;
+}
+
+
+li::before {
+    content:  "";
+    width: 20px;
+    height: 20px;
+    background-image: url("../assets/seta.png");
+    margin: 0 6px 0 0;
+}
+
+.galeria img {
+    width: calc((100% / 3) - 3px);
+    opacity: 0.7;
+}
+
+.galeria img:hover {
+    opacity: 1;
+    border: 5px solid #73B2D9;
+    border-radius: 6px;
+    width: 339.3px;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    margin: 25px 0 0 0;
+    background-color: #f5c002;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
